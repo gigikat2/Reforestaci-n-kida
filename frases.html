@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Texto dinámico con flechas</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #e8f5e9;
+    }
+
+    .contenedor {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .flecha {
+      font-size: 2rem;
+      cursor: pointer;
+      user-select: none;
+      color: #2e7d32;
+    }
+
+    .texto {
+      font-size: 60px;
+      color: #1b5e20;
+      min-width: 300px;
+      text-align: center;
+      transition: opacity 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+<div class="contenedor">
+  <div class="flecha" onclick="anterior()">⬅️</div>
+  <div class="texto" id="frase">🌳 Planta un árbol hoy.</div>
+  <div class="flecha" onclick="siguiente()">➡️</div>
+</div>
+
+<script>
+  const frases = [
+    "🌳 Cada arbol es una reliquia viviente , una obra maestra.",
+    "🌿 Cuida el planeta, es tu hogar.",
+    "🌱 si supieras que el mundo se acaba mañana,hoy plantarias un arbol.",
+    "🌍 Un árbol, un futuro mejor.",
+    "🍃 La Tierra te necesita."
+  ];
+
+  let indice = 0;
+
+  function actualizarTexto() {
+    const texto = document.getElementById("frase");
+    texto.style.opacity = 0;
+    setTimeout(() => {
+      texto.textContent = frases[indice];
+      texto.style.opacity = 1;
+    }, 200);
+  }
+
+  function siguiente() {
+    indice = (indice + 1) % frases.length;
+    actualizarTexto();
+  }
+
+  function anterior() {
+    indice = (indice - 1 + frases.length) % frases.length;
+    actualizarTexto();
+  }
+</script>
+
+</body>
+</html>

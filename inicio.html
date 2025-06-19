@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reforestando San Salvador El Verde - CBTis 252</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f5fff5; }
+    header, footer { background-color: #725C3F; color: white; padding: 1em; text-align: center; }
+    nav { background: #a0b179; padding: 0.5em; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 2em; max-width: 900px; margin: auto; }
+    h2 { color: #725C3F; }
+    .species-list li { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Reforestando San Salvador El Verde</h1>
+    <p>Proyecto ambiental del CBTis 252</p>
+  </header>
+
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="quees.html">¿Qué es reforestar?</a>
+    <a href="especies.html">Especies endémicas</a>
+    <a href="suelo.html">Tipos de suelo</a>
+    <a href="manteni.html">Mantenimiento</a>
+    <a href="accion.html">Nuestra acción</a>
+    <a href="galeria.html">Galería</a>
+    <a href="participa.html">Participa</a>
+  </nav>
+  <section id="inicio">
+    
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .texto-movible {
+      position: relative;
+      white-space: nowrap;
+      animation: deslizar 10s linear infinite;
+      font-size: 24px;
+      color: #2e7d32;
+    }
+
+    @keyframes deslizar {
+      from { left: 100%; }
+      to { left: -100%; }
+    }
+
+    .contenedor {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      background: #e8f5e9;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador Interno</title>
+  <style>
+    /* Estilos para el buscador */
+    #searchBox {
+      margin: 20px;
+      padding: 8px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    /* Resaltar las coincidencias */
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<!-- Campo de búsqueda -->
+<input type="text" id="searchBox" placeholder="Buscar..." oninput="searchText()">
+
+<script>
+  function searchText() {
+    const query = document.getElementById('searchBox').value.toLowerCase();
+    const paragraphs = document.querySelectorAll('p');
+    
+    paragraphs.forEach(p => {
+      const text = p.textContent.toLowerCase();
+      if (text.includes(query)) {
+        p.innerHTML = p.textContent.replace(new RegExp(query, 'gi'), match => `<span class="highlight">${match}</span>`);
+      } else {
+        p.innerHTML = p.textContent;
+      }
+    });
+  }
+</script>
+
+</body>
+<div class="contenedor">
+  <div class="texto-movible">🌳 Planta un árbol, respira mejor 🌿</div>
+</div>
+<blockquote style="border-left: 5px solid #2E8B57; padding: 10px 20px; margin: 20px; background-color: #f0f0f0; font-style: italic;">
+  “Cuando el último árbol haya sido talado, el último río envenenado y el último pez atrapado, solo entonces entenderemos que no se puede comer dinero.”
+</blockquote>
+<h2>Inicio</h2>
+
+</body>
+
+    <p>Bienvenidos al sitio del proyecto de reforestación del CBTis 252 en San Salvador El Verde. Aquí conocerás nuestro trabajo, el impacto ambiental y cómo puedes ayudar.
+Los suelos del Iztaccíhuatl y el Popocatépetl aún guardan el aliento de los bosques antiguos. En sus laderas, el zacatón resiste el viento y los oyameles susurran historias que pocos escuchan ya.
+
+Pero todavía hay lugares donde la tierra espera. Donde las semillas duermen con paciencia. Donde el verde puede volver.
+
+Ahí, en lo alto, el equilibrio es frágil. Y aun así, la montaña insiste.</p>
+  </section>
+
+<div style="text-align: center; padding: 20px;">
+  <img src="arboles.png" alt="Imagen decorada"
+       style="width: 60%; max-width: 400px; border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+</div>
+ <p style="font-size: 18px; text-align: center;">
+<div style="border: 1px solid #ccc; padding: 20px; margin: 30px auto; max-width: 600px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 8px; background-color: #ffffff;">
+    🌱 <em>“Cuidar los bosques es cuidar la vida.”</em>
+  </p>
+</div>

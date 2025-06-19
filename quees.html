@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reforestando San Salvador El Verde - CBTis 252</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5fff5;
+      line-height: 1.6;
+      color: #2e4e3f;
+    }
+
+    header, footer {
+      background-color: #725C3F;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      background: #a0b179;
+      padding: 0.5em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #725C3F;
+    }
+
+    .texto-movible {
+      position: relative;
+      white-space: nowrap;
+      animation: deslizar 10s linear infinite;
+      font-size: 24px;
+      color: #2e7d32;
+    }
+
+    @keyframes deslizar {
+      from { left: 100%; }
+      to { left: -100%; }
+    }
+
+    .contenedor-animado {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      background: #e8f5e9;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .contenedor-info {
+      max-width: 800px;
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .definicion {
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    .resaltado {
+      background-color: #e6f3ec;
+      border-left: 5px solid #3c7a5e;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 6px;
+      font-style: italic;
+      color: #3e5f50;
+    }
+
+    #searchBox {
+      display: block;
+      margin: 30px auto 10px;
+      padding: 8px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Reforestando San Salvador El Verde</h1>
+    <p>Proyecto ambiental del CBTis 252</p>
+  </header>
+
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="quees.html">¿Qué es reforestar?</a>
+    <a href="especies.html">Especies endémicas</a>
+    <a href="suelo.html">Tipos de suelo</a>
+    <a href="manteni.html">Mantenimiento</a>
+    <a href="accion.html">Nuestra acción</a>
+    <a href="galeria.html">Galería</a>
+    <a href="participa.html">Participa</a>
+  </nav>
+
+  <div class="contenedor-animado">
+    <div class="texto-movible">🌳 Planta un árbol, respira mejor 🌿</div>
+  </div>
+
+  <input type="text" id="searchBox" placeholder="Buscar..." oninput="searchText()">
+
+  <section>
+    <div class="contenedor-info">
+      <h2>¿Qué es Reforestar?</h2>
+      <p class="definicion">
+        Reforestar es el proceso de plantar árboles en áreas que han perdido su cobertura vegetal, ya sea por causas naturales como incendios o por actividades humanas como la tala y la urbanización. Este acto busca devolver vida al suelo, restaurar ecosistemas y mejorar la calidad del aire, el agua y la biodiversidad.
+      </p>
+      <div class="resaltado">
+        No se trata solo de plantar árboles, sino de reconstruir equilibrio y esperanza para el futuro.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 CBTis 252 - Proyecto Ambiental
+  </footer>
+
+  <script>
+    function searchText() {
+      const query = document.getElementById('searchBox').value.toLowerCase();
+      const paragraphs = document.querySelectorAll('p');
+      paragraphs.forEach(p => {
+        const text = p.textContent.toLowerCase();
+        if (text.includes(query)) {
+          p.innerHTML = p.textContent.replace(new RegExp(query, 'gi'), match => `<span class="highlight">${match}</span>`);
+        } else {
+          p.innerHTML = p.textContent;
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

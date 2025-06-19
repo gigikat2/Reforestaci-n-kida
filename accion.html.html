@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reforestando San Salvador El Verde - CBTis 252</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f5fff5; }
+    header, footer { background-color: #725C3F; color: white; padding: 1em; text-align: center; }
+    nav { background: #a0b179; padding: 0.5em; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 2em; max-width: 900px; margin: auto; }
+    h2 { color: #725C3F; }
+    .species-list li { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Reforestando San Salvador El Verde</h1>
+    <p>Proyecto ambiental del CBTis 252</p>
+  </header>
+
+  <nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="quees.html">¿Qué es reforestar?</a>
+    <a href="especies.html">Especies endémicas</a>
+    <a href="suelo.html">Tipos de suelo</a>
+    <a href="manteni.html">Mantenimiento</a>
+    <a href="accion.html">Nuestra acción</a>
+    <a href="galeria.html">Galería</a>
+    <a href="participa.html">Participa</a>
+  </nav>
+  <section id="inicio">
+    
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .texto-movible {
+      position: relative;
+      white-space: nowrap;
+      animation: deslizar 10s linear infinite;
+      font-size: 24px;
+      color: #2e7d32;
+    }
+
+    @keyframes deslizar {
+      from { left: 100%; }
+      to { left: -100%; }
+    }
+
+    .contenedor {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      background: #e8f5e9;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador Interno</title>
+  <style>
+    /* Estilos para el buscador */
+    #searchBox {
+      margin: 20px;
+      padding: 8px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    /* Resaltar las coincidencias */
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<!-- Campo de búsqueda -->
+<input type="text" id="searchBox" placeholder="Buscar..." oninput="searchText()">
+
+<script>
+  function searchText() {
+    const query = document.getElementById('searchBox').value.toLowerCase();
+    const paragraphs = document.querySelectorAll('p');
+    
+    paragraphs.forEach(p => {
+      const text = p.textContent.toLowerCase();
+      if (text.includes(query)) {
+        p.innerHTML = p.textContent.replace(new RegExp(query, 'gi'), match => `<span class="highlight">${match}</span>`);
+      } else {
+        p.innerHTML = p.textContent;
+      }
+    });
+  }
+</script>
+
+</body>
+
+  <div class="contenedor">
+    <div class="texto-corredizo">
+      🌳 Reforestar es vida — Ayuda al planeta, planta esperanza. 🌿
+    </div>
+  </div>
+
+  <section id="accion">
+    <h2>Nuestra acción</h2>
+    <p>Desde 2020 el presidente municipal C.Gregorio Ojeda y su equipo se han dado a la tarea de rehabilitar zonas verdes en las calles y parques de las comunidades con colaboración de los ciudadanos y escuelas pertenecientes al municipio.</p> 
+  <h2>Pequeños gestos que hacen florecer el mundo</h2>
+
+  <div class="acciones">
+    <div class="accion">
+      <img src="arboles.png" width="300" height="200" alt="Descripción de la imagen">
+      <h3>Plantar un árbol</h3>
+      <p>Un solo árbol puede dar sombra, oxígeno y hogar a cientos de especies.</p>
+    </div>
+      <h3>Separar residuos</h3>
+      <p>La tierra respira mejor cuando reducimos nuestra huella de basura.</p>
+    </div>
+
+   
+      <h3>Cuidar las plantas</h3>
+      <p>El verde necesita paciencia y agua, no sólo tierra.</p>
+    </div>
+
+  
+      <h3>Compartir saber</h3>
+      <p>Hablar sobre la reforestación puede inspirar a alguien más a empezar.</p>
+ 
